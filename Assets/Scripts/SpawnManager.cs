@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] projectiles;
     public float startDelay = 1.0f;
     public float xRange = 9;
-    public float zPos;
+    public float zPos = 30;
     // Start is called before the first frame update
     void Start()
     {

@@ -23,7 +23,7 @@ public class MoveForward : MonoBehaviour
 
 
     }
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
             Destroy(gameObject);
     }
