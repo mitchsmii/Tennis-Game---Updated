@@ -11,11 +11,14 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10f;
     private Animator playerAnim;
+    List<string> inventory;
+
 
     // Start is called before the first frame update
     void Start()
     {
         playerAnim = GetComponent<Animator>();
+        inventory = new List<string>();
     }
 
     // Update is called once per frame
@@ -32,5 +35,15 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * verticalInput * speed * Time.deltaTime);
 
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Pickup"))
+        {
+            inventory.Add("Super Speed");
+            Debug.Log("Inventory: " + string.Join(", ", inventory));
+        } 
+    }
+
 
 }

@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 
-public class MoveForward : MonoBehaviour
+public class Projectiles : MonoBehaviour
 {
     public float speed = 8f;
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class MoveForward : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-            Destroy(gameObject);
+        Destroy(gameObject);
     }
 
 }
