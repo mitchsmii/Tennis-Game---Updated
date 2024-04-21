@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2114248844372328312}
   - component: {fileID: 7950792900148950711}
   - component: {fileID: 3677242800963768223}
+  - component: {fileID: -1305979323523675806}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -148,6 +149,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1305979323523675806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851526951356669596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a943d93c5c9ac44f9d8920e8cbb4307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0.45709425, b: 0, a: 1}
+  flashSpeed: 1
 --- !u!1001 &2675060486088008780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -219,6 +234,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1902926406981984, guid: 666ff701b211d6440b7bd44aa7b3abfa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7443675859222342635}
+    - targetCorrespondingSourceObject: {fileID: 1902926406981984, guid: 666ff701b211d6440b7bd44aa7b3abfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4709669885466744871}
   m_SourcePrefab: {fileID: 100100000, guid: 666ff701b211d6440b7bd44aa7b3abfa, type: 3}
 --- !u!4 &2670700444915136054 stripped
 Transform:
@@ -251,3 +269,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.42606845, y: 0.60958624, z: 0.44799495}
   m_Center: {x: -0.000000014901161, y: 0.08079566, z: 0.000000052154064}
+--- !u!114 &4709669885466744871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2673304078866464044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a943d93c5c9ac44f9d8920e8cbb4307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashSpeed: 1

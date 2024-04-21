@@ -21,8 +21,7 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnProjectile()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-xRange, xRange), 0.7f, zPos);
-        
+        Vector3 spawnPos = new Vector3(Random.Range(-xRange, xRange), 1f, zPos);
         Instantiate(projectiles[Random.Range(0, projectiles.Length)], spawnPos, projectiles[0].transform.rotation);
     }
 }
